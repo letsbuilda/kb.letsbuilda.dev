@@ -57,15 +57,15 @@ const config = {
                 items: [
                     {
                         type: 'doc',
-                        docId: 'python/python',
+                        docId: 'vendor/README',
                         position: 'left',
-                        label: 'Python',
+                        label: 'Vendors',
                     },
                     {
                         type: 'doc',
-                        docId: 'software/excel',
+                        docId: 'python/README',
                         position: 'left',
-                        label: 'Software',
+                        label: 'Python',
                     },
                     {
                         href: 'https://github.com/letsbuilda/',
