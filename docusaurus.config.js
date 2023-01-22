@@ -41,9 +41,6 @@ const config = {
                         'https://github.com/letsbuilda/kb.letsbuilda.dev/tree/main/',
                 },
                 blog: false,
-                theme: {
-                    customCss: require.resolve('./src/css/custom.css'),
-                },
             }),
         ],
     ],
