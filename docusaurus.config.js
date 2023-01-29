@@ -68,6 +68,12 @@ const config = {
                         label: 'Python',
                     },
                     {
+                        type: 'doc',
+                        docId: 'discord/README',
+                        position: 'left',
+                        label: 'Discord',
+                    },
+                    {
                         href: 'https://github.com/letsbuilda/',
                         label: 'GitHub',
                         position: 'right',
