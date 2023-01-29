@@ -84,15 +84,6 @@ const config = {
                 style: 'dark',
                 links: [
                     {
-                        title: 'Projects',
-                        items: [
-                            {
-                                label: 'Meet our projects',
-                                to: 'https://projects.letsbuilda.dev',
-                            },
-                        ],
-                    },
-                    {
                         title: 'Community',
                         items: [
                             {
