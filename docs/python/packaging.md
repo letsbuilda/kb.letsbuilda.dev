@@ -1,1 +1,3 @@
-PYTHON PACKAGING
+# Packaging
+
+Packaging in Python.
