@@ -1,3 +1,3 @@
-# kb.letsbuilda.dev
+# Community built knowledgebase
 
-Community knowledge base
+This knowledgebase built by you, the community.
