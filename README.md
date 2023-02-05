@@ -1,3 +1,3 @@
 # Community built knowledgebase
 
-This knowledgebase built by you, the community.
+This knowledgebase is built by you, the community.
