@@ -6,8 +6,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-    title: 'Let\'s Build a knowledge base',
-    tagline: 'Community knowledge base',
+    title: 'Let\'s Build A Knowledgebase',
+    tagline: 'Community built knowledge base',
     url: 'https://kb.letsbuilda.dev/',
     baseUrl: '/',
     onBrokenLinks: 'throw',
@@ -83,15 +83,6 @@ const config = {
             footer: {
                 style: 'dark',
                 links: [
-                    {
-                        title: 'Projects',
-                        items: [
-                            {
-                                label: 'Meet our projects',
-                                to: 'https://projects.letsbuilda.dev',
-                            },
-                        ],
-                    },
                     {
                         title: 'Community',
                         items: [
