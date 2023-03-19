@@ -9,14 +9,19 @@ Here's a basic code to get your bot up and running.
 ```py
 import asyncio
 import discord
+
 TOKEN = "yourtoken"
-client = discord.Client()
+intents = discord.Intents.default()
+client = discord.Client(intents=intents)
+
 @client.event
 async def on_ready():
     print("Bot started!")
+
 async def start():
     async with client:
         await client.start(TOKEN)
+        
 asyncio.run(start())
 ```
 
@@ -26,8 +31,9 @@ A lot just happened there, so we'll just recap.
 
 The two `import` statements imported the modules `asyncio` and `discord`, which we need.
 
-`TOKEN = "yourtoken"` declares the variable `TOKEN` as your token, which you'll need to login your bot to discord.
-`client = discord.Client()` creates a `discord.Client` object and assigns it to `client`, which will represent your bot.
+`TOKEN = "yourtoken"` declares the variable `TOKEN` as your token, which you'll need to login your bot to Discord.
+`intents = discord.Intents.default()` creates a `discord.Intents` object. This class is to tell the Discord API what permissions/intents your bot will need.
+`client = discord.Client(intents=intents)` creates a `discord.Client` object and assigns it to `client`, which will represent your bot, and gives it the intents you just created earlier.
 
 The
 ```py
@@ -42,6 +48,7 @@ And finally
 async def start():
     async with client:
         await client.start(TOKEN)
+
 asyncio.run(start())
 ```
 creates an asynchronous `start` function that starts your bot with your predefined token, and executes your asynchronous function with `asyncio`, a library dedicated to asynchronous operations.
@@ -57,13 +64,18 @@ First, under your `on_ready` function, create a new asynchronous function and ca
 ```py
 import asyncio
 import discord
+
 TOKEN = "yourtoken"
-client = discord.Client()
+intents = discord.Intents.default()
+client = discord.Client(intents=intents)
+
 @client.event
 async def on_ready():
     print("Bot started!")
+
 async def my_command():
     pass
+
 async def start():
     async with client:
         await client.start(TOKEN)
@@ -76,18 +88,24 @@ Next, we need to create a `CommandTree` and set it up our `start` method.
 import asyncio
 from discord import app_commands
 import discord
+
 TOKEN = "yourtoken"
+intents = discord.Intents.default()
 client = discord.Client()
 tree = app_commands.CommandTree(client)
+
 @client.event
 async def on_ready():
     print("Bot started!")
+
 async def my_command():
     pass
+
 async def start():
     await tree.sync()
     async with client:
         await client.start(TOKEN)
+
 asyncio.run(start())
 ```
 

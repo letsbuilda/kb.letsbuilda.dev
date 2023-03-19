@@ -23,7 +23,10 @@ Click on the "Bot" tab on the left hand sidebar
 ### Step 5
 Press the "Add Bot" button in the top right hand corner. Press "Yes, do it!" in the popup that opens.
 
-### Step 6
+### Step 6 (optional)
+You may want your bot to be able to read messages. If so, scroll down to Privileged Gateway Intents, and click the switch next to "Message Content Intent".
+
+### Step 7
 Go to the "OAuth2" tab on the left sidebar, press "URL Generator."
 
 Select the `bot` scope (which indicates that your application is a bot user)
@@ -35,14 +38,14 @@ If you'd like, you can also select the individual permissions you think your bot
 
 Click the "Copy" button beside the "Generated URL" box. This will be the URL you use to invite your bot to a server.
 
-### Step 7
+### Step 8
 Over on Discord, create a server as usual. This is where you'll be tesing your bot(s).
 
-### Step 8
+### Step 9
 Paste the link you copied in Step 6 into any channel. Clicking on this link will open a popup
 that lets your bot join your server.
 
-### Step 9
+### Step 10
 Go back to the Discord Developer Portal, click "Reset Token", and copy the token. You'll need it later.
 
 ## Setting up your code
