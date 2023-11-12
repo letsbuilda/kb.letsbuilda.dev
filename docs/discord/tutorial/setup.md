@@ -6,6 +6,8 @@ sidebar_position: 1
 
 One of the very first steps to getting a Discord bot up and running is creating the bot account itself. This page will cover the process on doing that.
 
+## Creating your bot
+
 ### Step 1
 Navigate to the [Discord Developer Portal](https://discord.com/developers/applications)
 
@@ -21,15 +23,8 @@ Click on the "Bot" tab on the left hand sidebar
 ### Step 5
 Press the "Add Bot" button in the top right hand corner. Press "Yes, do it!" in the popup that opens.
 
-### Step 6
-**IMPORTANT**: toggle the "Message Content Intent." 
-Without this intent enabled, your bot won't be able to see the content of messages that users send.
-This is required for discord.py's command handlers to function.
-
-:::note
-Once your bot reaches 75 servers, it will need to be verified and Discord will have to approve
-your use of the Message Content Intents.
-:::
+### Step 6 (optional)
+You may want your bot to be able to read messages. If so, scroll down to Privileged Gateway Intents, and click the switch next to "Message Content Intent".
 
 ### Step 7
 Go to the "OAuth2" tab on the left sidebar, press "URL Generator."
@@ -49,6 +44,20 @@ Over on Discord, create a server as usual. This is where you'll be tesing your b
 ### Step 9
 Paste the link you copied in Step 6 into any channel. Clicking on this link will open a popup
 that lets your bot join your server.
+
+### Step 10
+Go back to the Discord Developer Portal, click "Reset Token", and copy the token. You'll need it later.
+
+## Setting up your code
+
+To setup your code, it's just as simple as doing a quick
+```sh
+$ pip install discord.py
+```
+
+and you're done! It's that simple!
+
+(you may want a venv but we'll cover that somewhere else)
 
 ### Conclusion
 Congratulations! You should now have your very own bot in your test server.
