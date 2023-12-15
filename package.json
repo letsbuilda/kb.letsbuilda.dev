@@ -24,11 +24,11 @@
     "react-dom": "^18.0.0"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "3.0.0",
-    "@docusaurus/types": "3.0.0",
-    "@docusaurus/tsconfig": "3.0.0",
-    "@types/react": "^18.2.29",
-    "typescript": "~5.2.2"
+    "@docusaurus/module-type-aliases": "3.0.1",
+    "@docusaurus/types": "3.0.1",
+    "@docusaurus/tsconfig": "3.0.1",
+    "@types/react": "^18.2.45",
+    "typescript": "~5.3.3"
   },
   "browserslist": {
     "production": [
